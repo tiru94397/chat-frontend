@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import io from 'socket.io-client'
 import axios from 'axios'
 
-const SOCKET_URL = 'http://localhost:4000'
+const SOCKET_URL = 'https://chat-backend-m42o.onrender.com/'
 
 export default function Chat({ token, onLogout }){
   const [me, setMe] = useState(null)
